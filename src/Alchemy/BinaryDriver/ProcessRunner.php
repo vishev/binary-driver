@@ -33,14 +33,10 @@ class ProcessRunner implements ProcessRunnerInterface
 
     /**
      * {@inheritdoc}
-     *
-     * @return ProcessRunner
      */
-    public function setLogger(LoggerInterface $logger)
+    public function setLogger(LoggerInterface $logger): void
     {
         $this->logger = $logger;
-
-        return $this;
     }
 
     /**
